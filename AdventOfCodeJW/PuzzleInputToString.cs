@@ -17,6 +17,7 @@ namespace AdventOfCodeJW
 
         public string ConvertToString()
         {
+            if (path == null) return string.Empty;
             return File.ReadAllText(path);
         }
     }

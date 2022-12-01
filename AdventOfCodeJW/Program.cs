@@ -1,7 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdventOfCodeJW;
 
-var puzzleInputGetter = new PuzzleInputToString("Day1Input.txt");
+var dayNumber = 1;
 
-Day1 day1 = new Day1(puzzleInputGetter.ConvertToString());
-Console.WriteLine(day1.GetAnswer());
+var puzzleInputGetter = new PuzzleInputToString($"Day{dayNumber}Input.txt");
+
+var day = DayFactory.GetDay(dayNumber, puzzleInputGetter.ConvertToString());
+Console.WriteLine(day?.GetAnswer());

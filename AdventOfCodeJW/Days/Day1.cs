@@ -1,4 +1,4 @@
-﻿namespace AdventOfCodeJW
+﻿namespace AdventOfCodeJW.Days
 {
     internal class Day1 : IDay
     {
@@ -34,7 +34,7 @@
                         i = j++;
                         break;
                     }
-                    elf.AddCalories(Int32.Parse(inputArray[j]));
+                    elf.AddCalories(int.Parse(inputArray[j]));
                 }
 
                 elfId++;
