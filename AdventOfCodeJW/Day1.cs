@@ -3,16 +3,11 @@
     internal class Day1 : IDay
     {
         IList<Elf> elves = new List<Elf>();
-        private readonly string input;
         private int elfId = 1;
 
-        public string Input => input;
+        public string Input { get; }
 
-        public Day1(string path)
-        {
-            var puzzleInput = new PuzzleInputToString(path);
-            input = puzzleInput.ConvertToString();
-        }
+        public Day1(string input) => Input = input;
 
         public string GetAnswer()
         {
@@ -26,7 +21,7 @@
 
         private List<Elf> GetElvesSorted()
         {
-            var inputArray = input.Split("\r\n");
+            var inputArray = Input.Split("\r\n");
 
             for (int i = 0; i < inputArray.Length; i++)
             {
