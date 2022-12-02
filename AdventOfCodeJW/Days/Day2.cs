@@ -14,7 +14,16 @@ namespace AdventOfCodeJW.Days
 
         public string GetAnswer()
         {
-            throw new NotImplementedException();
+            long playerScore = 0;
+            var inputArray = Input.Split("\r\n");
+
+            for (int i = 0; i < inputArray.Length; i++)
+            {
+                var game = new RockPaperScissorsGame(inputArray[i][0], inputArray[i][2]);
+                playerScore += game.getPlayerPoints(2);
+            }
+
+            return $"If the elf is trying to help, you will have {playerScore} points.";
         }
     }
 }

@@ -3,7 +3,6 @@ using AdventOfCodeJW;
 
 bool isInt;
 int dayNumber;
-
 do
 {
 	Console.Write("Enter the Day Number: ");
