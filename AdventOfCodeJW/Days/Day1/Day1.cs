@@ -1,4 +1,6 @@
-﻿namespace AdventOfCodeJW.Days
+﻿using AdventOfCodeJW.Helpers;
+
+namespace AdventOfCodeJW.Days
 {
     internal class Day1 : IDay
     {

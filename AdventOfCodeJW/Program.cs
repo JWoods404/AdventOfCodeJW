@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using AdventOfCodeJW;
+using AdventOfCodeJW.Helpers;
 
 bool isInt;
 int dayNumber;

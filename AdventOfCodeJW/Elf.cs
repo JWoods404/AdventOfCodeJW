@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using AdventOfCodeJW.Days.Day3;
+using System.Text.RegularExpressions;
 
 namespace AdventOfCodeJW
 {
