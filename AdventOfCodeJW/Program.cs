@@ -3,13 +3,16 @@ using AdventOfCodeJW.Helpers;
 
 bool isInt;
 int dayNumber;
-do
+while (true)
 {
-	Console.Write("Enter the Day Number: ");
-	isInt = int.TryParse(Console.ReadLine(), out dayNumber); 
-} while (!isInt);
+	do
+	{
+		Console.Write("Enter the Day Number: ");
+		isInt = int.TryParse(Console.ReadLine(), out dayNumber);
+	} while (!isInt);
 
-var puzzleInputGetter = new PuzzleInputToString($"Day{dayNumber}Input.txt");
+	var puzzleInputGetter = new PuzzleInputToString($"Day{dayNumber}Input.txt");
 
-var day = DayFactory.GetDay(dayNumber, puzzleInputGetter.ConvertToString());
-Console.WriteLine(day?.GetAnswer());
+	var day = DayFactory.GetDay(dayNumber, puzzleInputGetter.ConvertToStringArray());
+	Console.WriteLine(day?.GetAnswer() + Environment.NewLine); 
+}
