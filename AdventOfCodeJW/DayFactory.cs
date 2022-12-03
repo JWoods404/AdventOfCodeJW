@@ -17,6 +17,10 @@ namespace AdventOfCodeJW
                     return new Day1(input);
                 case 2:
                     return new Day2(input);
+                case 3:
+                    return new Day3(input);
+                //case 4:
+                //    return new Day4(input);
             }
 
             return null;

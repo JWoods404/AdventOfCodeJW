@@ -1,4 +1,6 @@
-﻿namespace AdventOfCodeJW
+﻿using System.Text.RegularExpressions;
+
+namespace AdventOfCodeJW
 {
     class Elf
     {
@@ -8,6 +10,10 @@
         {
             ElfId = id;
         }
+
+        public ElfGroup ElfGroup { get; set; }
+
+        public Rucksack Rucksack { get; set; }
 
         public int ElfId { get; }
         public long TotalCalories
