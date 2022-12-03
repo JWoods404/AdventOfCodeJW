@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCodeJW.Helpers;
 
-namespace AdventOfCodeJW.Days
+namespace AdventOfCodeJW.Days.Day3
 {
     internal class Day3 : IDay
     {
@@ -14,23 +14,21 @@ namespace AdventOfCodeJW.Days
         private int elfId = 0;
         private List<ElfGroup> elfGroups= new();
 
-        public Day3(string input) => Input = input;
+        public Day3(string[] input) => Input = input;
 
-        public string Input { get; }
+        public string[] Input { get; }
 
         public string GetAnswer()
         {
-            var inputArray = Input.Split("\r\n");
-
             // use test data
-            //inputArray = testData.Split("\r\n");
+            //Input = testData.Split("\r\n");
 
             ElfGroup? elfGroup = null;
 
-            for (int i = 0; i < inputArray.Length; i++)
+            for (int i = 0; i < Input.Length; i++)
             {
                 Elf elf = new Elf(++elfId);
-                elf.Rucksack = new Rucksack(inputArray[i]);
+                elf.Rucksack = new Rucksack(Input[i]);
                 if (i % 3 == 0)
                 {
                     elfGroup = new ElfGroup();

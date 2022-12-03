@@ -8,7 +8,7 @@ namespace AdventOfCodeJW.Helpers
 {
     internal interface IDay
     {
-        public string Input { get; }
+        public string[] Input { get; }
 
         public string GetAnswer();
     }

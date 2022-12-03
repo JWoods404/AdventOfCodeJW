@@ -4,7 +4,7 @@ namespace AdventOfCodeJW.Helpers
 {
     internal static class DayFactory
     {
-        public static IDay? GetDay(int dayId, string input)
+        public static IDay? GetDay(int dayId, string[] input)
         {
             switch (dayId)
             {

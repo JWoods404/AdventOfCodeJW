@@ -8,6 +8,6 @@ namespace AdventOfCodeJW.Helpers
 {
     internal interface IPuzzleInputToString
     {
-        string ConvertToString();
+        string[] ConvertToStringArray();
     }
 }

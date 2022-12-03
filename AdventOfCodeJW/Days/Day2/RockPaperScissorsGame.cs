@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCodeJW
+namespace AdventOfCodeJW.Days.Day2
 {
     internal class RockPaperScissorsGame
     {

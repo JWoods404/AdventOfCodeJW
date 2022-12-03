@@ -1,15 +1,15 @@
 ﻿using AdventOfCodeJW.Helpers;
 
-namespace AdventOfCodeJW.Days
+namespace AdventOfCodeJW.Days.Day1
 {
     internal class Day1 : IDay
     {
         IList<Elf> elves = new List<Elf>();
         private int elfId = 1;
 
-        public string Input { get; }
+        public string[] Input { get; }
 
-        public Day1(string input) => Input = input;
+        public Day1(string[] input) => Input = input;
 
         public string GetAnswer()
         {
@@ -23,20 +23,18 @@ namespace AdventOfCodeJW.Days
 
         private List<Elf> GetElvesSorted()
         {
-            var inputArray = Input.Split("\r\n");
-
-            for (int i = 0; i < inputArray.Length; i++)
+            for (int i = 0; i < Input.Length; i++)
             {
                 var elf = new Elf(elfId);
 
-                for (int j = i; j < inputArray.Length; j++)
+                for (int j = i; j < Input.Length; j++)
                 {
-                    if (inputArray[j] == "")
+                    if (Input[j] == "")
                     {
                         i = j++;
                         break;
                     }
-                    elf.AddCalories(int.Parse(inputArray[j]));
+                    elf.AddCalories(int.Parse(Input[j]));
                 }
 
                 elfId++;

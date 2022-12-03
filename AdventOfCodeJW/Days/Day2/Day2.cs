@@ -5,22 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCodeJW.Helpers;
 
-namespace AdventOfCodeJW.Days
+namespace AdventOfCodeJW.Days.Day2
 {
     internal class Day2 : IDay
     {
-        public Day2(string input) => Input = input;
+        public Day2(string[] input) => Input = input;
 
-        public string Input { get; }
+        public string[] Input { get; }
 
         public string GetAnswer()
         {
             long playerScore = 0;
-            var inputArray = Input.Split("\r\n");
 
-            for (int i = 0; i < inputArray.Length; i++)
+            for (int i = 0; i < Input.Length; i++)
             {
-                var game = new RockPaperScissorsGame(inputArray[i][0], inputArray[i][2]);
+                var game = new RockPaperScissorsGame(Input[i][0], Input[i][2]);
                 playerScore += game.getPlayerPoints(2);
             }
 

@@ -15,10 +15,10 @@ namespace AdventOfCodeJW.Helpers
             path = Path.Combine(Environment.CurrentDirectory, "Resources", filename);
         }
 
-        public string ConvertToString()
+        public string[] ConvertToStringArray()
         {
-            if (path == null || !File.Exists(path)) return string.Empty;
-            return File.ReadAllText(path);
+            if (path == null || !File.Exists(path)) return null;
+            return File.ReadAllText(path).Split("\r\n");
         }
     }
 }
