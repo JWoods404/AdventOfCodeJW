@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCodeJW.Days.Day4
+namespace AdventOfCodeJW.Days.Day04
 {
-    internal class Day4 : IDay
+    internal class Day04 : IDay
     {
         private List<Elf> elves = new();
-        public Day4(string[] input) => Input = input;
+        public Day04(string[] input) => Input = input;
 
         public string[] Input { get; set; }
 

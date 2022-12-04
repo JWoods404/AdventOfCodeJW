@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCodeJW.Helpers;
 
-namespace AdventOfCodeJW.Days.Day3
+namespace AdventOfCodeJW.Days.Day03
 {
-    internal class Day3 : IDay
+    internal class Day03 : IDay
     {
         private long priorityScore;
         private long groupPriorityScore;
         private int elfId = 0;
         private List<ElfGroup> elfGroups= new();
 
-        public Day3(string[] input) => Input = input;
+        public Day03(string[] input) => Input = input;
 
         public string[] Input { get; }
 

@@ -11,7 +11,8 @@ while (true)
 		isInt = int.TryParse(Console.ReadLine(), out dayNumber);
 	} while (!isInt);
 
-	var puzzleInputGetter = new PuzzleInputToString($"Day{dayNumber}Input.txt");
+	var puzzleInputGetter = dayNumber < 10 ? new PuzzleInputToString($"Day0{dayNumber}Input.txt") 
+		: new PuzzleInputToString($"Day{dayNumber}Input.txt");
 
 	var day = DayFactory.GetDay(dayNumber, puzzleInputGetter.ConvertToStringArray());
 	Console.WriteLine(day?.GetAnswer() + Environment.NewLine); 

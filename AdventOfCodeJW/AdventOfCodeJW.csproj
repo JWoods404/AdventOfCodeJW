@@ -8,24 +8,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Days\Day2\Day2.cs">
+    <Compile Update="Days\Day02\Day02.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\Day1Input.txt">
+    <None Update="Resources\Day01Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\Day2Input.txt">
+    <None Update="Resources\Day02Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\Day3Input.txt">
+    <None Update="Resources\Day03Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Resources\Day4Input.txt">
+    <None Update="Resources\Day04Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\Day06Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Day05Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Days\Day8\" />
+    <Folder Include="Days\Day9\" />
+    <Folder Include="Days\Day10\" />
+    <Folder Include="Days\Day6 - Copy %285%29\" />
+    <Folder Include="Days\Day7\" />
+    <Folder Include="Days\Day6\" />
   </ItemGroup>
 
 </Project>

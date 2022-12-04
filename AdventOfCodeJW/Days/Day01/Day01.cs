@@ -1,15 +1,15 @@
 ﻿using AdventOfCodeJW.Helpers;
 
-namespace AdventOfCodeJW.Days.Day1
+namespace AdventOfCodeJW.Days.Day01
 {
-    internal class Day1 : IDay
+    internal class Day01 : IDay
     {
         IList<Elf> elves = new List<Elf>();
         private int elfId = 1;
 
         public string[] Input { get; }
 
-        public Day1(string[] input) => Input = input;
+        public Day01(string[] input) => Input = input;
 
         public string GetAnswer()
         {

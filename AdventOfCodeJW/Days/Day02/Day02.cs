@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCodeJW.Helpers;
 
-namespace AdventOfCodeJW.Days.Day2
+namespace AdventOfCodeJW.Days.Day02
 {
-    internal class Day2 : IDay
+    internal class Day02 : IDay
     {
-        public Day2(string[] input) => Input = input;
+        public Day02(string[] input) => Input = input;
 
         public string[] Input { get; }
 
