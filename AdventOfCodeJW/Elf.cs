@@ -1,4 +1,4 @@
-﻿using AdventOfCodeJW.Days.Day3;
+﻿using AdventOfCodeJW.Days.Day03;
 using System.Text.RegularExpressions;
 
 namespace AdventOfCodeJW
