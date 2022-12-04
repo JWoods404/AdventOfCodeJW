@@ -17,14 +17,9 @@ namespace AdventOfCodeJW
         public Rucksack Rucksack { get; set; }
 
         public int ElfId { get; }
-        public long TotalCalories
-        {
-            get
-            {
-                return totalCalories;
-            }
-        }
+        public long TotalCalories => totalCalories;
 
+        public List<int> SectionAssignment { get; set; } = new();
 
         public void AddCalories(long calories)
         {
