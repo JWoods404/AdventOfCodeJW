@@ -18,6 +18,8 @@ namespace AdventOfCodeJW.Helpers
                     return new Days.Day04.Day04(input);
                 case 5:
                     return new Days.Day05.Day05(input);
+                case 6:
+                    return new Days.Day06.Day06(input);
             }
 
             return null;

@@ -35,12 +35,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Days\Day8\" />
-    <Folder Include="Days\Day9\" />
+    <Folder Include="Days\Day08\" />
+    <Folder Include="Days\Day09\" />
     <Folder Include="Days\Day10\" />
-    <Folder Include="Days\Day6 - Copy %285%29\" />
-    <Folder Include="Days\Day7\" />
-    <Folder Include="Days\Day6\" />
+    <Folder Include="Days\Day11\" />
+    <Folder Include="Days\Day07\" />
   </ItemGroup>
 
 </Project>
