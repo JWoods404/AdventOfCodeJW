@@ -32,6 +32,9 @@
     <None Update="Resources\Day05Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\Day07Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -39,7 +42,6 @@
     <Folder Include="Days\Day09\" />
     <Folder Include="Days\Day10\" />
     <Folder Include="Days\Day11\" />
-    <Folder Include="Days\Day07\" />
   </ItemGroup>
 
 </Project>
