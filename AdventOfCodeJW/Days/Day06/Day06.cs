@@ -1,9 +1,4 @@
 ﻿using AdventOfCodeJW.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCodeJW.Days.Day06
 {
@@ -14,15 +9,20 @@ namespace AdventOfCodeJW.Days.Day06
 
         public string GetAnswer()
         {
-            Input[0] = "bvwbjplbgvbhsrlpgdmjqwftvncz";
+            //Input[0] = "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw";  // test data
 
-            for (int i = 0; i < Input[0].Length - 4; i++)
+            return GetStart(4) + Environment.NewLine + GetStart(14);
+        }
+
+        private string GetStart(int x)
+        {
+            for (int i = 0; i < Input[0].Length - x; i++)
             {
-                var tempList = Input[0][i..(i + 4)].ToList();
+                var tempList = Input[0][i..(i + x)].ToList();
                 var test = tempList.Distinct().ToList();
-                if (tempList.Distinct().ToList().Count() == 4)
+                if (tempList.Distinct().ToList().Count() == x)
                 {
-                    return (i+4).ToString();
+                    return (i + x).ToString();
                 }
             }
             return string.Empty;
